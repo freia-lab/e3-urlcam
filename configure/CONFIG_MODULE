@@ -1,0 +1,17 @@
+EPICS_MODULE_NAME := urlcam
+
+E3_MODULE_VERSION := 0.1.0
+E3_MODULE_NAME := urlcam
+
+OPI_VERSION := 0.1.0
+OPI_DIRNAME := areadet
+
+# Dependent module versions
+# For example:
+ADURL_DEP_VERSION:=2.3.0+0
+
+E3_MODULE_SRC_PATH := $(EPICS_MODULE_NAME)
+E3_MODULE_MAKEFILE := $(E3_MODULE_NAME).Makefile
+
+-include $(TOP)/configure/CONFIG_OPTIONS
+-include $(TOP)/configure/CONFIG_MODULE.local
